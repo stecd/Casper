@@ -842,7 +842,8 @@ margin on the iframe, cause it breaks stuff. */
    ========================================================================== */
 
 
-.post-comments{margin:4rem 0;padding:4rem 0 0 0;border-top:#ebf2f6 1px solid;zoom:1;}
+.post-footer::after{display:block;content:"";width:20px;height:20px;border:2px solid #ebf2f6;position:absolute;bottom:-2.85em;left:50%;margin-left:-10px;background:#fff;z-index:2;-webkit-border-radius:100%;border-radius:100%;-webkit-box-shadow:#fff 0 0 0 5px;box-shadow:#fff 0 0 0 5px}
+.post-comments{margin:4rem 0;padding:4rem 0 0 0;border-top:#ebf2f6 10px solid;position:relative;zoom:1;}
 .post-comments:before,.post-comments:after{content:"";display:table}
 .post-comments:after{clear:both}
 .post-comments .discussion-tabs{border-bottom:#ebf2f6 1px solid;list-style-type:none;margin:0;padding:0;zoom:1;}
@@ -852,7 +853,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-comments .discussion-tabs li:hover{background:#eff5f7}
 .post-comments .discussion-tabs li.active{background:#3a4145;color:#f7fafb}
 .post-comments .comments-container{padding:4rem 0}
-.post-comments .hidden{display:none}
+.hidden{display:none}
  
 
 /* ==========================================================================
