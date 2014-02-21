@@ -67,3 +67,13 @@
   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
+
+// header blur effect
+(function() {
+  $(window).scroll(function() {
+    var oVal;
+    oVal = $(window).scrollTop() / 240;
+    return $(".blur").css("opacity", oVal);
+  });
+
+}).call(this);
