@@ -21,10 +21,20 @@
                     $(this).removeClass('full-img');
                 }
             });
-        };
+        }
 
         casperFullImg();
         $(window).smartresize(casperFullImg);
+
+        // added comments
+        $(".discussion-tabs").on("click", "li", function (e) {
+          var target = $(e.currentTarget);
+          var toShow = $("#" + target.data("show") + "-comments-container");
+          $(".discussion-tabs li").removeClass("active");
+          target.addClass("active");
+          $(".comments-container").addClass("hidden");
+          toShow.removeClass('hidden');
+         });
 
     });
 
@@ -43,7 +53,7 @@
               if (!execAsap)
                   func.apply(obj, args);
               timeout = null;
-          };
+          }
 
           if (timeout)
               clearTimeout(timeout);
@@ -52,7 +62,7 @@
 
           timeout = setTimeout(delayed, threshold || 100);
       };
-  }
+  };
   // smartresize 
   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
