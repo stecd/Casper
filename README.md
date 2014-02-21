@@ -1,6 +1,6 @@
-# Casper
+# Slite
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Forked from Ghost's custom theme [Casper](http://bob.yexley.net/adding-comments-to-your-ghost-blog/) with the addition of comments from [Cypress] (https://github.com/ryexley/cypress).
 
 ## Copyright & License
 
