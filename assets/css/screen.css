@@ -229,6 +229,16 @@ mark {
     background-color: #ffc336;
 }
 
+pre {
+    background:#f7fafb;
+    border:1px solid #eee;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    font-size:.7em;
+    line-height:1.3em;
+    padding:1em
+}
+
 code, tt {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
@@ -843,7 +853,7 @@ margin on the iframe, cause it breaks stuff. */
 
 
 .post-footer::after{display:block;content:"";width:20px;height:20px;border:2px solid #ebf2f6;position:absolute;bottom:-2.85em;left:50%;margin-left:-10px;background:#fff;z-index:2;-webkit-border-radius:100%;border-radius:100%;-webkit-box-shadow:#fff 0 0 0 5px;box-shadow:#fff 0 0 0 5px}
-.post-comments{margin:4rem 0;padding:4rem 0 0 0;border-top:#ebf2f6 10px solid;position:relative;zoom:1;}
+.post-comments{margin:4rem 0;padding:4rem 0 0 0;border-top:#ebf2f6 10px solid;position:relative;zoom:1;/* Make facebook comments widget fluid */}
 .post-comments:before,.post-comments:after{content:"";display:table}
 .post-comments:after{clear:both}
 .post-comments .discussion-tabs{border-bottom:#ebf2f6 1px solid;list-style-type:none;margin:0;padding:0;zoom:1;}
@@ -852,9 +862,9 @@ margin on the iframe, cause it breaks stuff. */
 .post-comments .discussion-tabs li{background:#f7fafb;border-left:#ebf2f6 1px solid;border-right:#ebf2f6 1px solid;border-top:#ebf2f6 1px solid;cursor:pointer;display:inline-block;font-size:.75em;float:left;margin:0 .5em 0 0;padding:.1em 1em;-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;}
 .post-comments .discussion-tabs li:hover{background:#eff5f7}
 .post-comments .discussion-tabs li.active{background:#3a4145;color:#f7fafb}
-.post-comments .comments-container{padding:4rem 0}
-.post-comments .fb-comments,.post-comments .fb-comments > span,.post-comments .fb-comments iframe[style]{width:100% !important}
-.hidden{display:none}
+.post-comments .comments-container{min-height:350px;padding:2rem 0 4rem 0}
+.post-comments .fb-comments,.post-comments .fb-comments *{width:100% !important}
+
  
 
 /* ==========================================================================
