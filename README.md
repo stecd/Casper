@@ -1,6 +1,9 @@
 # Slite
 
-Forked from Ghost's custom theme [Casper](http://bob.yexley.net/adding-comments-to-your-ghost-blog/) with the addition of comments from [Cypress] (https://github.com/ryexley/cypress).
+Forked from Ghost's custom theme [Casper](http://bob.yexley.net/adding-comments-to-your-ghost-blog/) with the addition of comments with the help of the [Cypress] (https://github.com/ryexley/cypress) theme. 
+
+Slide + Write = Slite
+Have your content slide over the background image while enjoying the focused design on simple blogging. 
 
 ## Copyright & License
 
