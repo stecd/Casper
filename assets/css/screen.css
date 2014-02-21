@@ -853,6 +853,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-comments .discussion-tabs li:hover{background:#eff5f7}
 .post-comments .discussion-tabs li.active{background:#3a4145;color:#f7fafb}
 .post-comments .comments-container{padding:4rem 0}
+.post-comments .fb-comments,.post-comments .fb-comments > span,.post-comments .fb-comments iframe[style]{width:100% !important}
 .hidden{display:none}
  
 
